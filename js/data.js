@@ -162,7 +162,7 @@ const portfolioData = {
       type: "project",
       title: "CampusRAG Development",
       organization: "Personal Project",
-      period: "2024",
+      period: "2026",
       description: "Architected and built a RAG-powered campus intelligence system from scratch.",
       highlights: ["LLM Integration", "Vector Search", "Production Deployment"]
     },
@@ -170,7 +170,7 @@ const portfolioData = {
       type: "hackathon",
       title: "AISE Hackathon",
       organization: "Flood Segmentation Challenge",
-      period: "2024",
+      period: "2026",
       description: "Developed a computer vision solution for flood zone identification using satellite imagery.",
       highlights: ["Deep Learning", "Computer Vision", "Satellite Data"]
     },
@@ -178,7 +178,7 @@ const portfolioData = {
       type: "project",
       title: "Full-Stack Development",
       organization: "Multiple Production Systems",
-      period: "2023 — Present",
+      period: "2025 — Present",
       description: "Built and deployed multiple full-stack applications including booking systems, auction platforms, and AI-powered tools.",
       highlights: ["React", "Node.js", "PostgreSQL", "Real-time Systems"]
     }
@@ -189,7 +189,7 @@ const portfolioData = {
     university: "SASTRA University",
     degree: "B.Tech in Computer Science",
     specialization: "AI & Data Science",
-    period: "2022 — 2026",
+    period: "2023 — 2027",
     cgpa: "",
     coursework: [
       "Data Structures & Algorithms",
