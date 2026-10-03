@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keertan Satish | Software Engineer</title>
+  <meta name="description" content="Keertan Satish - Computer Science Engineer building real-world production-grade systems across AI, full-stack development, and intelligent applications.">
+  <meta name="theme-color" content="#050608">
+
+  <!-- Favicon / Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js 0.170 Importmap -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" id="main-nav">
+    <div class="nav-container">
+      <div class="nav-brand-group">
+        <a href="#hero" class="nav-logo">
+          <div class="logo-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13H5.5L12 6.5z"/></svg>
+          </div>
+          <span>REDSHADOW</span>
+        </a>
+        <div class="nav-status-pill">
+          <span class="status-dot"></span>
+          <span>SYSTEM ONLINE // PROTOCOL ACTIVE</span>
+        </div>
+      </div>
+
+      <ul class="nav-links-menu" id="nav-links">
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#skills" class="nav-link">SKILLS</a></li>
+        <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+        <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+        <li><a href="#education" class="nav-link">EDUCATION</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Light / Dark Theme Switcher -->
+        <button class="btn-theme-toggle" id="btn-theme-toggle" aria-label="Toggle light/dark theme" title="Toggle Light/Dark Theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+
+        <a href="#contact" class="btn-nav-cta">
+          <span>INITIATE CONTACT</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Open mobile navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <span class="cursor-ring"></span>
+    <span class="cursor-dot"></span>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="section-hero">
+    <div class="hero-wrapper">
+      <div class="hero-col-info">
+        <div class="hero-level-badge"><span class="badge-dot"></span><span>REDSHADOW</span></div>
+        <h1 class="hero-title">BRINGING<br><span class="text-gradient-crimson">DARK</span><br><span class="text-gradient-gold">MYTHS</span><br>TO REAL-TIME LIFE.</h1>
+        <p class="hero-bio">Hi, I'm Keertan, a Full-stack developer who builds AI-powered products that actually ship. </p>
+        <div class="hero-cta-group"><a href="#projects" class="btn-primary-glow" id="btn-inspect-artifacts"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2"/></svg><span>INSPECT ARTIFACTS (3D)</span></a><button class="btn-secondary-wireframe" id="btn-turntable" title="Toggle automatic 3D character rotation"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 11a8.1 8.1 0 00-15.5-2M4 5v4h4M4 13a8.1 8.1 0 0015.5 2M20 19v-4h-4"/></svg><span>ROTATE ME</span></button></div>
+        <div class="hero-stats-row"><div class="stat-item-box"><div class="stat-number">4<span class="accent-symbol">+</span></div><div class="stat-label">SYSTEMS SHIPPED</div></div><div class="stat-item-box"><div class="stat-number">7<span class="accent-symbol">+</span></div><div class="stat-label">PROJECTS BUILT</div></div><div class="stat-item-box"><div class="stat-number">10<span style="font-size:16px; color:var(--crimson-primary);">+</span></div><div class="stat-label">PROJECTS IN PROGRESS</div></div></div>
+      </div>
+      <div class="hero-col-character"><div class="hero-character-stage" id="hero-character-stage" title="Click and drag horizontally to rotate character"><canvas id="hero-3d-canvas"></canvas><div class="character-fallback" id="hero-fallback"><div class="fallback-rim-glow"></div><img src="cloaked_shadow.png" alt="Cloaked Shadow character 3D preview" class="fallback-character-img" id="fallback-character-img"><div class="fallback-loader-indicator" id="fallback-loader"><div class="loader-spinner-ring"></div><span class="loader-text">AGENT LOADING...</span></div></div><div class="agent-connected-status" id="agent-connected-status">AGENT ONLINE</div></div></div>
+    </div>
+  </section>
+  <!-- POST-HERO PORTFOLIO -->
+  <main id="portfolio-main">
+    <section id="about" class="portfolio-section about-section">
+      <div class="section-header"><span class="section-num">01</span><h2 class="section-title">BEHIND THE SYSTEM</h2><div class="section-divider"></div></div>
+      <div class="about-layout">
+        <div class="about-statement"><p class="eyebrow">KEERTAN SATISH // SYSTEM BUILDER</p><h3>Curiosity in.<br><span>Working systems out.</span></h3><div class="statement-stack" id="about-statements"></div></div>
+        <div class="about-copy"><p id="about-intro-text"></p><div class="about-focus" id="about-focus"></div></div>
+      </div>
+      <div class="identity-grid" id="identity-grid"></div>
+    </section>
+
+    <section id="skills" class="portfolio-section skills-section">
+      <div class="section-header"><span class="section-num">02</span><h2 class="section-title">SYSTEM CAPABILITIES</h2><div class="section-divider"></div></div>
+      <div class="section-intro"><p>Tools are only useful when they move a problem forward. These are the systems and disciplines I reach for while building.</p></div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <section id="projects" class="portfolio-section projects-section">
+      <div class="section-header"><span class="section-num">03</span><h2 class="section-title">ENGINEERED SYSTEMS</h2><div class="section-divider"></div></div>
+      <div class="section-intro"><p>Selected artifacts from the loop of asking better questions, building the first version, and making the hard parts dependable.</p></div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <section id="experience" class="portfolio-section experience-section">
+      <div class="section-header"><span class="section-num">04</span><h2 class="section-title">THE BUILD LOG</h2><div class="section-divider"></div></div>
+      <div class="timeline-wrap" id="timeline-list"><div class="timeline-progress"></div></div>
+    </section>
+
+    <section id="education" class="portfolio-section education-section">
+      <div class="section-header"><span class="section-num">05</span><h2 class="section-title">ORIGIN</h2><div class="section-divider"></div></div>
+      <div id="education-content"></div>
+    </section>
+
+    <section id="achievements" class="portfolio-section achievements-section">
+      <div class="section-header"><span class="section-num">06</span><h2 class="section-title">MISSION RESULTS</h2><div class="section-divider"></div></div>
+      <div class="achievements-grid" id="achievements-grid"></div>
+    </section>
+
+    <section id="resume" class="portfolio-section resume-section">
+      <div class="resume-panel"><div><p class="eyebrow">PORTABLE SPECIFICATION</p><h2>TAKE THE WORK<br><span>WITH YOU.</span></h2></div><a id="btn-resume" class="resume-link" href="#" download>DOWNLOAD RESUME <span>→</span></a></div>
+    </section>
+
+    <section id="contact" class="portfolio-section contact-section">
+      <div class="contact-inner"><p class="eyebrow">COMMUNICATION FREQUENCY OPEN</p><h2 class="contact-headline">LET'S BUILD<br><span>SOMETHING REAL.</span></h2><p id="contact-subtext"></p><a id="btn-contact" class="contact-primary" href="mailto:keertansatish@gmail.com">START A CONVERSATION <span>→</span></a><div class="contact-links-row" id="contact-links"></div></div>
+    </section>
+  </main>
+  <section id="legacy-skills" class="section legacy-section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">SYSTEM CAPABILITIES</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <!-- Populated dynamically from data.js or default -->
+    </div>
+  </section>
+
+  <!-- PROJECTS / ARTIFACTS SECTION -->
+  <section id="legacy-projects" class="section legacy-section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">ENGINEERED SYSTEMS & ARTIFACTS</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- Populated dynamically from data.js -->
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section id="legacy-experience" class="section legacy-section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">THE BUILD LOG</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="timeline-wrap" id="timeline-list">
+      <!-- Populated dynamically -->
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SECTION -->
+  <section id="legacy-achievements" class="section legacy-section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">MISSION RESULTS</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="achievements-grid" id="achievements-grid">
+      <!-- Populated dynamically -->
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="legacy-contact" class="section legacy-section">
+    <div class="contact-inner">
+      <div class="hero-level-badge">
+        <span class="badge-dot"></span>
+        <span>COMMUNICATION FREQUENCY OPEN</span>
+      </div>
+      <h2 class="contact-headline">LET'S BUILD<br>SOMETHING REAL.</h2>
+      <p style="color:var(--text-dim); max-width:540px;">
+        Available for AAA game productions, technical art consulting, and interactive real-time 3D pipelines.
+      </p>
+      <div class="contact-links-row">
+        <a href="mailto:contact@archive.dev" class="contact-pill-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>EMAIL TRANSMISSION</span>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-pill-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GITHUB ARCHIVE</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-pill-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LINKEDIN</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer"><div class="footer-inner"><div><strong>KEERTAN SATISH</strong><span>BUILDING REAL-WORLD PRODUCTION-GRADE SYSTEMS.</span></div><nav id="footer-links" aria-label="Footer links"></nav><div>&copy; 2026 Keertan Satish</div></div></footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="post-hero.js"></script>
+  <script src="js/cursor.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

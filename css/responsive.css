@@ -1,0 +1,261 @@
+/* ============================================================
+   RESPONSIVE.CSS — Mobile, Tablet, Desktop Breakpoints
+   ============================================================ */
+
+/* ── Tablet (max-width: 1024px) ────────────────────────── */
+@media (max-width: 1024px) {
+  .hero-name-first,
+  .hero-name-last {
+    font-size: clamp(40px, 7vw, 80px);
+  }
+
+  .hero-text {
+    max-width: 520px;
+  }
+
+  .education-content {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+  .nav-links a {
+    font-size: 10px;
+  }
+}
+
+/* ── Mobile (max-width: 768px) ─────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-inner {
+    height: 60px;
+  }
+
+  .section-hero {
+    min-height: 100svh;
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    padding: 0 24px;
+    padding-top: 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-name-first,
+  .hero-name-last {
+    font-size: clamp(36px, 10vw, 56px);
+  }
+
+  .tagline-line {
+    font-size: clamp(14px, 3.5vw, 20px);
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .section-inner {
+    padding: clamp(48px, 8vw, 80px) 24px;
+  }
+
+  .section-title {
+    font-size: clamp(24px, 6vw, 36px);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-statements {
+    gap: 12px;
+  }
+  .statement-word {
+    font-size: clamp(20px, 6vw, 32px);
+  }
+
+  .contact-heading {
+    font-size: clamp(28px, 7vw, 42px);
+  }
+  .contact-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .modal-content {
+    padding: 32px 24px;
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .resume-heading {
+    font-size: clamp(24px, 6vw, 36px);
+  }
+
+  .timeline {
+    padding-left: 28px;
+  }
+  .timeline-dot {
+    left: -34px;
+  }
+}
+
+/* ── Small Mobile (max-width: 480px) ───────────────────── */
+@media (max-width: 480px) {
+  .hero-name-first,
+  .hero-name-last {
+    font-size: clamp(32px, 10vw, 48px);
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .project-card {
+    padding: 24px;
+  }
+
+  .skill-card {
+    padding: 22px;
+  }
+
+  .education-main,
+  .education-coursework {
+    padding: 24px;
+  }
+}
+
+/* ── Reduced Motion ────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .anim-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .section-header {
+    opacity: 1;
+    transform: none;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .section {
+    opacity: 1;
+  }
+
+  .timeline-item {
+    opacity: 1;
+    transform: none;
+  }
+
+  .statement-word {
+    color: var(--white);
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
+/* ── High Contrast Preference ──────────────────────────── */
+@media (prefers-contrast: high) {
+  :root {
+    --border-subtle: rgba(255, 255, 255, 0.15);
+    --gray-mid: #777777;
+    --gray-lite: #999999;
+  }
+
+  .hero-description,
+  .about-text,
+  .project-card-desc {
+    color: var(--white-dim);
+  }
+}
+
+/* ── Touch Devices ─────────────────────────────────────── */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .skill-card:hover {
+    transform: none;
+  }
+
+  .achievement-card:hover {
+    transform: none;
+  }
+}

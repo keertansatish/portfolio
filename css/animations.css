@@ -1,0 +1,145 @@
+/* ============================================================
+   ANIMATIONS.CSS — Keyframes & Scroll-Driven Animations
+   ============================================================ */
+
+/* ── Keyframes ─────────────────────────────────────────── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px var(--red-glow); }
+  50% { opacity: 0.5; box-shadow: 0 0 4px var(--red-glow); }
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 10px var(--red-glow); }
+  50% { box-shadow: 0 0 20px var(--red-glow), 0 0 40px rgba(139, 0, 0, 0.15); }
+}
+
+@keyframes line-grow {
+  from { width: 0; }
+  to { width: 60px; }
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes border-glow {
+  0%, 100% { border-color: var(--border-subtle); }
+  50% { border-color: var(--border-red); }
+}
+
+/* ── Reveal Animations ─────────────────────────────────── */
+.anim-reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s var(--ease-out-expo),
+              transform 0.8s var(--ease-out-expo);
+}
+.anim-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal delays */
+.hero-name-block .anim-reveal { transition-delay: 0.1s; }
+.hero-tagline.anim-reveal { transition-delay: 0.3s; }
+.hero-description.anim-reveal { transition-delay: 0.5s; }
+.hero-ctas.anim-reveal { transition-delay: 0.65s; }
+.hero-indicator.anim-reveal { transition-delay: 0.8s; }
+
+/* ── Scroll-Triggered Section Animations ───────────────── */
+.section-header {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--ease-out-expo),
+              transform 0.7s var(--ease-out-expo);
+}
+.section-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section-header.visible .section-line {
+  animation: line-grow 0.6s var(--ease-out-expo) 0.3s both;
+}
+
+/* Generic scroll-reveal for cards/items */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+}
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Card Tilt Effect (via JS) ─────────────────────────── */
+.tilt-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* ── Loading Animations ────────────────────────────────── */
+.loading-screen .loading-name {
+  animation: fade-in 0.6s ease-out both;
+}
+.loading-screen .loading-bar-container {
+  animation: fade-in 0.6s ease-out 0.2s both;
+}
+.loading-screen .loading-status {
+  animation: fade-in 0.6s ease-out 0.3s both;
+}
+.loading-screen .loading-checks {
+  animation: fade-in 0.6s ease-out 0.4s both;
+}
+
+/* ── Hover Glow Animation ──────────────────────────────── */
+.glow-hover {
+  transition: box-shadow 0.4s var(--ease-out-expo);
+}
+.glow-hover:hover {
+  box-shadow: 0 0 20px var(--red-subtle), 0 4px 30px rgba(0,0,0,0.4);
+}
+
+/* ── Magnetic Button Visual Feedback ───────────────────── */
+.btn {
+  transition: transform 0.35s var(--ease-out-expo),
+              background 0.35s,
+              border-color 0.35s,
+              box-shadow 0.35s,
+              color 0.35s;
+}
+
+/* ── Smooth Section Transitions ────────────────────────── */
+.section {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out-expo);
+}
+.section.in-view {
+  opacity: 1;
+}
+.section-hero {
+  opacity: 1; /* Hero always visible after load */
+}
